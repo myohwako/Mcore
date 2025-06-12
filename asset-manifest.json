@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Mcore/static/css/main.5ad69251.css",
+    "main.js": "/Mcore/static/js/main.a0137e46.js",
+    "static/media/A bebedera-heavy.otf": "/Mcore/static/media/A bebedera-heavy.80fcbaf63c960b7865be.otf",
+    "static/media/Merchant Copy.ttf": "/Mcore/static/media/Merchant Copy.b4074b724b1de7a204a0.ttf",
+    "static/media/8bitlim.ttf": "/Mcore/static/media/8bitlim.5e3ffbf02bd351f0da64.ttf",
+    "index.html": "/Mcore/index.html",
+    "main.5ad69251.css.map": "/Mcore/static/css/main.5ad69251.css.map",
+    "main.a0137e46.js.map": "/Mcore/static/js/main.a0137e46.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5ad69251.css",
+    "static/js/main.a0137e46.js"
+  ]
+}
