@@ -1,0 +1,330 @@
+/* ====== 폰트 세팅 ====== */
+@font-face {
+    font-family: 'Paperlogy-8ExtraBold';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-8ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Chosunilbo_myungjo';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Chosunilbo_myungjo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* ====== 전체 레이아웃 ====== */
+.info {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+    box-sizing: border-box;
+}
+
+.info-page {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #fff;
+    color: #222;
+    width: 80vw;
+    min-height: 80vh;
+    font-size: 20px;
+    box-sizing: border-box;
+    position: relative;
+    gap: 100px;
+}
+
+
+/* ====== 좌측 이미지 영역 ====== */
+.info-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    position: relative;
+
+    background-image: url('https://i.pinimg.com/736x/67/76/f7/6776f70276b39b5fec451554bb256f29.jpg');
+
+}
+
+.info-grid-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+}
+
+.info-left-title {
+    position: absolute;
+    left: 0;
+    bottom: 1rem;
+    font-size: 5rem;
+    font-weight: bold;
+    color: #222;
+    font-family: 'Chosunilbo_myungjo';
+    padding-left: 4rem;
+    padding-bottom: 2rem;
+}
+
+.info-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    max-width: 100%;
+}
+
+
+/* ====== 이미지 카드 ====== */
+.info-card {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    border-radius: 12px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.info-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.info-card:hover {
+    transform: scale(1.03);
+}
+
+
+/* ====== 설명 우측 ====== */
+.info-right {
+    flex: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-image: url('https://i.pinimg.com/736x/2c/12/7b/2c127b8ad8f20b785541e5859e05879b.jpg');
+}
+
+.background-rave {
+    position: absolute;
+    font-size: 10rem;
+    font-weight: 900;
+    color: #222;
+    opacity: 0.25;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    pointer-events: none;
+    user-select: none;
+}
+
+/* ====== 설명 박스 ====== */
+.info-detail-box {
+    background-color: #fedeff;
+    padding: 2rem;
+    max-width: 80%;
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(0, 0, 0, 0.481);
+    z-index: 1;
+    color: #121212;
+    font-weight: 500;
+    font-size: 1.6rem;
+    font-family: 'Chosunilbo_myungjo';
+
+    /* ✅ 기본 회전된 상태 유지 */
+    transform: rotate(-10deg);
+
+    /* ✅ 슬라이드 애니메이션 부여 */
+    animation: slideUpOnly 0.6s ease;
+}
+
+@keyframes slideUpFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50px) rotate(-10deg);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) rotate(-10deg);
+    }
+}
+
+@keyframes slideUpOnly {
+    0% {
+        opacity: 0;
+        transform: translateY(40px) rotate(-10deg);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) rotate(-10deg);
+    }
+}
+
+
+/* 텍스트 내부 */
+.info-detail-box p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #fff;
+    text-align: left;
+}
+
+
+/* ====== 버튼 ====== */
+.random-btn {
+  background-color: #fff;
+  color: #333;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 999px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1px solid black;
+  height: 45px; /* ✅ 높이 맞춤 */
+  display: flex;
+  align-items: center;
+}
+
+.random-btn:hover {
+    background-color: black;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+
+/* ====== 우측 하단 버튼 박스 ====== */
+.info-buttons {
+    position: absolute;
+    bottom: 30px;
+    right: 40px;
+    display: flex;
+    gap: 1rem;
+    align-items: center; /* ✅ 수직 가운데 정렬 */
+    z-index: 10;
+  }
+
+
+/* ====== 찜 버튼 ====== */
+.likee-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    transition: transform 0.2s ease;
+}
+
+.likee-btn img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transform-origin: center;
+}
+
+.likee-btn.liked img {
+    animation: jelly-pop 0.4s ease;
+}
+
+@keyframes jelly-pop {
+    0% { transform: scale(1); }
+    30% { transform: scale(1.4, 0.8); }
+    50% { transform: scale(0.9, 1.2); }
+    70% { transform: scale(1.1, 0.95); }
+    100% { transform: scale(1); }
+}
+
+/* 아래에서 스윽 올라오는 애니메이션 */
+.slidee-up {
+    animation: slideUpFadeIn 0.6s ease-out;
+  }
+  
+  @keyframes slideUpFadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .grid-toggle-btn {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    background: #fff;
+    border: 1px solid black;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 20;
+  }
+  
+  .info-grid-view {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 1rem;
+    padding: 2rem;
+    width: 100%;
+  }
+  
+  .postit-card {
+    background-color: #fedeff;
+    border: 1px solid #bbb;
+    padding: 1rem;
+    font-family: 'Chosunilbo_myungjo';
+    cursor: pointer;
+    position: relative;
+    aspect-ratio: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: transform 0.2s ease;
+  }
+  
+  .postit-card:hover {
+    transform: scale(1.03);
+  }
+  
+  .postit-number {
+    font-size: 4rem;
+    color: #666;
+  }
+  
+  .postit-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 0.5rem;
+    color: #222;
+  }
+  
+  .postit-desc {
+    font-size: 1.2rem;
+    color: #444;
+    margin-top: 0.5rem;
+  }
+  
+  .postit-like {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    font-size: 1.2rem;
+  }
+  

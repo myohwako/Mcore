@@ -1,0 +1,58 @@
+/* // index.css */
+@font-face {
+  font-family: "8-bit-limit";
+  font-weight: normal;
+  src: url(./fonts/8-bit-limit/8bitlim.ttf) format(true);
+}
+
+@font-face {
+  font-family: "8bitLimit";
+  font-weight: normal;
+  src: url("./fonts/8-bit-limit/8bitlim.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "AbebederaHeavy";
+  src: url("./fonts/a-bebedera/A\ bebedera-heavy.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "merchant-copy";
+  font-weight: normal;
+  src: url("./fonts/merchant-copy/Merchant\ Copy.ttf") format("truetype");
+}
+
+
+
+body {
+
+  font-family: '8-bit-limit';
+
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background-color: black;
+  color: #FAF9F6;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* 기본 선택 색상 (모든 요소에 적용) */
+::selection {
+  background-color: #ffa3f194; /* 연한 핑크 */
+  color: black; /* 선택된 텍스트 색상 */
+}
+
+/* Firefox 전용 */
+::-moz-selection {
+  background-color: #ffa3f194;
+  color: black;
+}
+

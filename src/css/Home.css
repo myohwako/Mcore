@@ -1,0 +1,79 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 60px 20px;
+    box-sizing: border-box;
+    text-align: center;
+    white-space: pre-wrap;
+  }
+
+  
+
+  
+  .web-des {
+    font-size: 1.2rem;
+    color: #fff;
+    max-width: 800px;
+    margin-top: 2rem;
+    line-height: 1.6;
+  }
+
+  /* Home.css */
+
+.home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    /* background-image: url('https://i.pinimg.com/736x/eb/73/6f/eb736fc9e9155169fce0113e6391d2b6.jpg'); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .home::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
+    z-index: 1;
+  }
+  
+  .main-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    font-family: 'Chosunilbo_myungjo';
+  }
+  
+  .core {
+    font-family: "8bitLimit";
+    font-size: 300px;
+    color: #FF88CF;
+    margin: 0;
+  }
+
+  
+  .sigma-span {
+    font-family: "AbebederaHeavy";
+    font-size: 9rem;
+    color: white;
+  }
+
+  .web-des {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+  }
+  
+  

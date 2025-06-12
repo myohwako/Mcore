@@ -1,0 +1,86 @@
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-container {
+    position: relative;
+    width: 90vw;
+    max-width: 1200px;
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 16px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* ✅ 설명이 아래로 */
+    color: white;
+    overflow: hidden;
+  }
+  
+  .modal-close {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    background: none;
+    color: white;
+    font-size: 2.5rem;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  .modal-title {
+    position: absolute;
+    top: 2rem;
+    left: 3rem;
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: #ff88cf;
+    text-shadow: 0 0 10px black;
+    z-index: 5;
+  }
+  
+  .modal-desc-box {
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    padding: 1.2rem 1.5rem;
+    border-radius: 12px;
+    max-width: 600px;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    z-index: 5;
+    align-self: flex-start;
+  }
+  
+  .modal-like {
+    margin-top: 1rem;
+    text-align: right;
+  }
+  
+  @media (max-width: 768px) {
+    .modal-container {
+      padding: 2rem;
+      height: auto;
+    }
+  
+    .modal-title {
+      font-size: 2rem;
+      left: 2rem;
+      top: 1.5rem;
+    }
+  
+    .modal-desc-box {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+  }
+  
