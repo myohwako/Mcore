@@ -17,7 +17,7 @@ import './index.css'; // 전역 스타일
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Router basename="/mcore">
+    <Router basename="/Mcore">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
